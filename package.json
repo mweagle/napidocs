@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "author": {
+    "name": "Matt Weagle",
+    "url": "https://github.com/mweagle/napidocs"
+  },
+  "dependencies": {
+    "async": "0.1.22",
+    "bunyan": "0.14.0",
+    "underscore": "1.4.3",
+    "underscore.string": "2.0.0",
+    "optimist": "0.3.4",
+    "node-static" : "0.6.5",
+    "robotskirt" : "2.7.1",
+    "rimraf" : "2.1.1",
+    "mkdirp" : "0.3.4",
+    "ncp" : "0.2.6"
+  },
+  "description": "Node.js project that creates a static REST API Documentation site",
+  "devDependencies": {
+    "mocha": "1.6.0"
+  },
+  "keywords": ["HATEOS", "documentation", "api"],
+  "main": "./lib",
+  "name": "napidocs",
+  "version": "0.0.1"
+}
