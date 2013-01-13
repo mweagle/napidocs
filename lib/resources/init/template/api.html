@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Napidocs Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Napidocs REST Documentation">
+    <meta name="author" content="Matt Weagle <https://github.com/mweagle/napidocs>">
+
+    <!--
+    Included styles.  More styles available at:
+    Bootswatch: http://bootswatch.com/
+
+    <link href="/_static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/_static/simplex/simplex.css" rel="stylesheet">
+    <link href="/_static/cyborg/cyborg.css" rel="stylesheet">
+    <link href="/_static/slate/slate.css" rel="stylesheet">
+    <link href="/_static/superhero/superhero.css" rel="stylesheet">
+    <link href="/_static/united/united.css" rel="stylesheet">
+    -->
+    <link href="/_static/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- All bundled Highlights.js styles (http://softwaremaniacs.org/soft/highlight/en/)
+
+      <link rel="stylesheet" href="/_static/highlight.js/styles/arta.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/ascetic.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/brown_paper.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/dark.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/default.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/dir.log">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/far.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/github.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/googlecode.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/idea.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/ir_black.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/magula.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/monokai.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/pojoaque.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/pojoaque.jpg">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/rainbow.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/school_book.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/solarized_dark.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/solarized_light.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/sunburst.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/tomorrow-night-blue.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/tomorrow-night-bright.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/tomorrow-night-eighties.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/tomorrow-night.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/tomorrow.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/vs.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/xcode.css">
+      <link rel="stylesheet" href="/_static/highlight.js/styles/zenburn.css">
+    -->
+    <!--
+    Highlights theme
+    -->
+    <link rel="stylesheet" href="/_static/highlight.js/styles/github.css">
+
+    <link href="/_static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav icons -->
+    <link rel="shortcut icon" href="/_static/book_open.png">
+
+    <!--
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+   -->
+
+   <!--
+   Include the napidoc CSS overrides.
+   -->
+    <link href="/_static/napidocs/napidocs.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">NapiDocs API Documentation (v.1)</a>
+          <ul class="nav pull-right">
+            <li class="divider-vertical"></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://github.com/mweagle/napidocs" target="_blank">Napidocs on Github</a></li>
+                <li class="divider"></li>
+                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <%= navigation_bar %>
+            </ul>
+          </div>
+        </div>
+        <div class="span9">
+          <%= page_content %>
+      </div>
+      <hr>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/_static/bootstrap/js/jquery.js"></script>
+    <script src="/_static/bootstrap/js/bootstrap.js"></script>
+    <!-- Napidocs.js
+    ================================================== -->
+    <script src="/_static/napidocs/napidocs.js"></script>
+
+    <!-- Highlights.js
+    ================================================== -->
+    <script src="/_static/highlight.js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

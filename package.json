@@ -14,7 +14,8 @@
     "robotskirt" : "2.7.1",
     "rimraf" : "2.1.1",
     "mkdirp" : "0.3.4",
-    "ncp" : "0.2.6"
+    "ncp" : "0.2.6",
+    "highlight" : "0.2.3"
   },
   "description": "Node.js project that creates a static REST API Documentation site",
   "devDependencies": {
