@@ -6,7 +6,6 @@
   },
   "dependencies": {
     "async": "0.1.22",
-    "bunyan": "0.14.0",
     "underscore": "1.4.3",
     "underscore.string": "2.0.0",
     "optimist": "0.3.4",
