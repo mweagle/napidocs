@@ -30,12 +30,13 @@ into a static HTML site pages documenting a REST-style service.
       * `/build`: The built output that should be statically hosted.
       * `/docs`: The tree of Markdown files that comprise your service's documentation.
       * `/plugins`: Plugins used to transform the internal documentation tree to HTML output.  Plugins are referenced in the `/template/api.html` file.
-      * `/template`: Includes an `api.html` file that is used to generate each documentation page
+      * `/template`: Includes the `api.html` file that is used to generate each documentation page.
 2. Preview the documentation: `node napidocs.js preview -s ~/NapiDocs`
   * This will build the documentation and start a local [static file-server](https://github.com/cloudhead/node-static) to serve up the pages on port 9696.  The port can be overriden using the `-p/--port` command line argument
 3. Update the the documentation inputs:
   * Update `/template/api.html`:
       * Change the _head/meta_ elements for your service
+      * Change the template markup
       * Optionally change the CSS style
       * Optionally change the [highlights.js style](http://softwaremaniacs.org/media/soft/highlight/test.html) reference
   * All immediate `/docs` child directories are transformed into Group headers in the sidebar.  Delete any immediate directories that don't apply to your service.
@@ -53,14 +54,15 @@ If you want to customize the output, you can write a custom plugin and reference
       <%= my_custom_plugin %>
     </ul>
 
-will instruct NapiDocs to look for `/plugins/my_custom_plugin.js` in the documentation directory.
+will instruct NapiDocs to look for `~/NapiDocs/plugins/my_custom_plugin.js`
+in the documentation directory.
 
 Plugins must export a single function:
 
     /**
      * Return HTML for the given asset object
-     * @param  {Object} asset_obj  The current asset being rendered
-     * @param  {Object} parent_obj The parent asset of asset_obj
+     * @param  {Object} asset_obj  The current asset being rendered (Markdown or directory)
+     * @param  {Object} parent_obj The parent asset of asset_obj, may be null/empty
      * @param  {Object} all_data   The entire accumulated internal documentation representation
      * @return {String}            HTML content
      */
@@ -70,5 +72,4 @@ Plugins must export a single function:
     }
 
 The internal documentation representation is visible by providing the `-d/--dump` command line
-option to the `napidocs build` command.
-
+option to the `node napidocs.js build` command.
