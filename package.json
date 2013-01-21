@@ -1,5 +1,4 @@
 {
-  "private": true,
   "author": {
     "name": "Matt Weagle",
     "url": "https://github.com/mweagle/napidocs"
@@ -23,5 +22,5 @@
   "keywords": ["HATEOS", "documentation", "api"],
   "main": "./lib",
   "name": "napidocs",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
