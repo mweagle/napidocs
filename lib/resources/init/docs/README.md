@@ -71,5 +71,5 @@ Plugins must export a single function:
       // Return HTML string
     }
 
-The internal documentation representation is visible by providing the `-d/--dump` command line
+The [internal representation](./dump.json) is visible by providing the `-d/--dump` command line
 option to the `node napidocs.js build` command.
