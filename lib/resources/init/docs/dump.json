@@ -1,0 +1,119 @@
+{
+  "Link Relations": {
+    "type": "directory",
+    "name": "Link Relations",
+    "base_name": "Link Relations",
+    "README.md": {
+      "type": "file",
+      "name": "README.md",
+      "base_name": "README",
+      "output_name": "README.html",
+      "raw": "## Link Relations\n\nThis application supports the following\n[Link Relations](http://www.iana.org/assignments/link-relations/link-relations.xml),\nwhich are listed using\n[MultiMarkdown Table Syntax](http://fletcher.github.com/peg-multimarkdown/mmd-manual.pdf):\n\n| Link Relation  | Interpretation |\n| ------------- | ------------- |\n| first  | First entry in the set  |\n| previous  | Previous set of entries  |\n| next  | Next set of entries  |\n| last  | Last set of entries  |\n",
+      "parsed": "<h2>Link Relations</h2>\n\n<p>This application supports the following\n<a href=\"http://www.iana.org/assignments/link-relations/link-relations.xml\">Link Relations</a>,\nwhich are listed using\n<a href=\"http://fletcher.github.com/peg-multimarkdown/mmd-manual.pdf\">MultiMarkdown Table Syntax</a>:</p>\n\n<table><thead>\n<tr>\n<th>Link Relation</th>\n<th>Interpretation</th>\n</tr>\n</thead><tbody>\n<tr>\n<td>first</td>\n<td>First entry in the set</td>\n</tr>\n<tr>\n<td>previous</td>\n<td>Previous set of entries</td>\n</tr>\n<tr>\n<td>next</td>\n<td>Next set of entries</td>\n</tr>\n<tr>\n<td>last</td>\n<td>Last set of entries</td>\n</tr>\n</tbody></table>\n"
+    }
+  },
+  "Media Types": {
+    "type": "directory",
+    "name": "Media Types",
+    "base_name": "Media Types",
+    "application-json.md": {
+      "type": "file",
+      "name": "application-json.md",
+      "base_name": "application-json",
+      "output_name": "application-json.html",
+      "raw": "## application/json\n\nA popular [application type](http://tools.ietf.org/html/rfc4627)\nthat often needs application-specific information.  Sometimes the\nbest you can do is provide [an example](http://json.org/example.html)\n(note the highlights.js styling)\n\n    {\n      \"glossary\": {\n        \"title\": \"example glossary\",\n        \"GlossDiv\": {\n          \"title\": \"S\",\n          \"GlossList\": {\n            \"GlossEntry\": {\n              \"ID\": \"SGML\",\n              \"SortAs\": \"SGML\",\n              \"GlossTerm\": \"Standard Generalized Markup Language\",\n              \"Acronym\": \"SGML\",\n              \"Abbrev\": \"ISO 8879:1986\",\n              \"GlossDef\": {\n                \"para\": \"A meta-markup language, used to create markup languages such as DocBook.\",\n                \"GlossSeeAlso\": [\"GML\", \"XML\"]\n              },\n              \"GlossSee\": \"markup\"\n            }\n          }\n        }\n      }\n    }",
+      "parsed": "<h2>application/json</h2>\n\n<p>A popular <a href=\"http://tools.ietf.org/html/rfc4627\">application type</a>\nthat often needs application-specific information.  Sometimes the\nbest you can do is provide <a href=\"http://json.org/example.html\">an example</a>\n(note the highlights.js styling)</p>\n\n<pre><code>{\n  &quot;glossary&quot;: {\n    &quot;title&quot;: &quot;example glossary&quot;,\n    &quot;GlossDiv&quot;: {\n      &quot;title&quot;: &quot;S&quot;,\n      &quot;GlossList&quot;: {\n        &quot;GlossEntry&quot;: {\n          &quot;ID&quot;: &quot;SGML&quot;,\n          &quot;SortAs&quot;: &quot;SGML&quot;,\n          &quot;GlossTerm&quot;: &quot;Standard Generalized Markup Language&quot;,\n          &quot;Acronym&quot;: &quot;SGML&quot;,\n          &quot;Abbrev&quot;: &quot;ISO 8879:1986&quot;,\n          &quot;GlossDef&quot;: {\n            &quot;para&quot;: &quot;A meta-markup language, used to create markup languages such as DocBook.&quot;,\n            &quot;GlossSeeAlso&quot;: [&quot;GML&quot;, &quot;XML&quot;]\n          },\n          &quot;GlossSee&quot;: &quot;markup&quot;\n        }\n      }\n    }\n  }\n}\n</code></pre>\n"
+    }
+  },
+  "Resources": {
+    "type": "directory",
+    "name": "Resources",
+    "base_name": "Resources",
+    "items": {
+      "type": "directory",
+      "name": "items",
+      "base_name": "items",
+      "{item_id}": {
+        "type": "directory",
+        "name": "{item_id}",
+        "base_name": "{item_id}",
+        "DELETE.md": {
+          "type": "file",
+          "name": "DELETE.md",
+          "base_name": "DELETE",
+          "output_name": "DELETE.html",
+          "raw": "## DELETE /items/{item_id}\n\nDelete `item_id` resource",
+          "parsed": "<h2>DELETE /items/{item_id}</h2>\n\n<p>Delete <code>item_id</code> resource</p>\n"
+        },
+        "GET.md": {
+          "type": "file",
+          "name": "GET.md",
+          "base_name": "GET",
+          "output_name": "GET.html",
+          "raw": "## GET /items/{item_id}\n\nGET `item_id` representation",
+          "parsed": "<h2>GET /items/{item_id}</h2>\n\n<p>GET <code>item_id</code> representation</p>\n"
+        },
+        "PUT.md": {
+          "type": "file",
+          "name": "PUT.md",
+          "base_name": "PUT",
+          "output_name": "PUT.html",
+          "raw": "## PUT /items/{item_id}\n\nUpdate `item_id` representation",
+          "parsed": "<h2>PUT /items/{item_id}</h2>\n\n<p>Update <code>item_id</code> representation</p>\n"
+        }
+      },
+      "GET.md": {
+        "type": "file",
+        "name": "GET.md",
+        "base_name": "GET",
+        "output_name": "GET.html",
+        "raw": "## GET /items\n\nGet the list of all items",
+        "parsed": "<h2>GET /items</h2>\n\n<p>Get the list of all items</p>\n"
+      },
+      "index.md": {
+        "type": "file",
+        "name": "index.md",
+        "base_name": "index",
+        "output_name": "index.html",
+        "raw": "### Items\n\nItems are the core of the API.  They are so important it's impossible to adequately define them.",
+        "parsed": "<h3>Items</h3>\n\n<p>Items are the core of the API.  They are so important it&#39;s impossible to adequately define them.</p>\n"
+      },
+      "POST.md": {
+        "type": "file",
+        "name": "POST.md",
+        "base_name": "POST",
+        "output_name": "POST.html",
+        "raw": "## POST /items\n\nPOST a new item to the collection",
+        "parsed": "<h2>POST /items</h2>\n\n<p>POST a new item to the collection</p>\n"
+      }
+    },
+    "README.md": {
+      "type": "file",
+      "name": "README.md",
+      "base_name": "README",
+      "output_name": "README.html",
+      "raw": "## Resources\n\nIf [Level 3](http://martinfowler.com/articles/richardsonMaturityModel.html)\n[HATEOS](http://en.wikipedia.org/wiki/HATEOAS) is an aspirational goal\nfor your service, then resources are probably pretty important to you.\n\nNote that the the `/items/{item_id}` resource uses a\n[URL Template](http://www.mnot.net/javascript/url_template/) pattern\nto emphasize to your clients that they need to substitute a value.\n\nThis README is often a good place to put common service information such\nas:\n\n  * ETags\n  * Authentication\n  * Rate Throttling\n  * etc.",
+      "parsed": "<h2>Resources</h2>\n\n<p>If <a href=\"http://martinfowler.com/articles/richardsonMaturityModel.html\">Level 3</a>\n<a href=\"http://en.wikipedia.org/wiki/HATEOAS\">HATEOS</a> is an aspirational goal\nfor your service, then resources are probably pretty important to you.</p>\n\n<p>Note that the the <code>/items/{item_id}</code> resource uses a\n<a href=\"http://www.mnot.net/javascript/url_template/\">URL Template</a> pattern\nto emphasize to your clients that they need to substitute a value.</p>\n\n<p>This README is often a good place to put common service information such\nas:</p>\n\n<ul>\n<li>ETags</li>\n<li>Authentication</li>\n<li>Rate Throttling</li>\n<li>etc.</li>\n</ul>\n"
+    }
+  },
+  "cop-out-nope.gif": {
+    "type": "resource",
+    "path": "/Users/mweagle/stormcloud/napidocs/test/docs/cop-out-nope.gif"
+  },
+  "CHANGES.md": {
+    "type": "file",
+    "name": "CHANGES.md",
+    "base_name": "CHANGES",
+    "output_name": "CHANGES.html",
+    "raw": "## Changes\n\n### 0.0.2\n\n* Support *index.md* files for subdirectories.\n  * Child directories at depth > 2 can optionally include an *index.md* file for content that should be linked to the directory itself.\n* Include [FontAwesome](http://fortawesome.github.com/Font-Awesome/) for additional styling options\n\n### 0.0.1\n\n* Initial release",
+    "parsed": "<h2>Changes</h2>\n\n<h3>0.0.2</h3>\n\n<ul>\n<li>Support <em>index.md</em> files for subdirectories.\n\n<ul>\n<li>Child directories at depth &gt; 2 can optionally include an <em>index.md</em> file for content that should be linked to the directory itself.</li>\n</ul></li>\n<li>Include <a href=\"http://fortawesome.github.com/Font-Awesome/\">FontAwesome</a> for additional styling options</li>\n</ul>\n\n<h3>0.0.1</h3>\n\n<ul>\n<li>Initial release</li>\n</ul>\n"
+  },
+  "README.md": {
+    "type": "file",
+    "name": "README.md",
+    "base_name": "README",
+    "output_name": "README.html",
+    "raw": "<div class='hero-unit'>\n\n<h1>NapiDocs</h1>\n\nREST Documentation Generator\n<br />\nWould you use a REST-style service without human-friendly documentation?\n<p />\n<img src='/cop-out-nope.gif'>\n</div>\n\n\n## What is it?\n\nNapiDocs is a set of [Node.js](http://nodejs.org/) command line scripts\nthat transform a directory of Markdown files and supporting resources\ninto a static HTML site pages documenting a REST-style service.\n\n## What's Included?\n\n* [Twitter Bootstrap](http://twitter.github.com/bootstrap)\n* [Alternative Bootswatch Themes](http://bootswatch.com/)\n* [Highlight.js](http://softwaremaniacs.org/soft/highlight/en/)\n\n## Documentation Workflow\n\n1. Initialize an empty NapiDocs directory: `node napidocs.js init -t ~/NapiDocs\"`\n  * This will create the following directory structure:\n      * `/_static`: Static resources (CSS, JS) that will be copied to the target output\n      * `/build`: The built output that should be statically hosted.\n      * `/docs`: The tree of Markdown files that comprise your service's documentation.\n      * `/plugins`: Plugins used to transform the internal documentation tree to HTML output.  Plugins are referenced in the `/template/api.html` file.\n      * `/template`: Includes the `api.html` file that is used to generate each documentation page.\n2. Preview the documentation: `node napidocs.js preview -s ~/NapiDocs`\n  * This will build the documentation and start a local [static file-server](https://github.com/cloudhead/node-static) to serve up the pages on port 9696.  The port can be overriden using the `-p/--port` command line argument\n3. Update the the documentation inputs:\n  * Update `/template/api.html`:\n      * Change the _head/meta_ elements for your service\n      * Change the template markup\n      * Optionally change the CSS style\n      * Optionally change the [highlights.js style](http://softwaremaniacs.org/media/soft/highlight/test.html) reference\n  * All immediate `/docs` child directories are transformed into Group headers in the sidebar.  Delete any immediate directories that don't apply to your service.\n  * Like the [Hero Unit](http://twitter.github.com/bootstrap/components.html#typography) at the top of this page, you can reference Twitter Bootstrap styles in your Markdown.\n4. Repeat steps 2 and 3 as needed\n5. Build the site: `node napidocs.js build --source ~/NapiDocs`\n6. Host the documentation (`~/NapiDocs/build`) on a static server.\n  * For example, a version of this documentation is hosted on [S3](http://napidocs.s3-website-us-west-2.amazonaws.com/README.html)\n\n## Custom Plugins\n\nIf you want to customize the output, you can write a custom plugin and reference it in `/template/api.html`.  For example:\n\n    <ul class=\"nav nav-list\">\n      <%= my_custom_plugin %>\n    </ul>\n\nwill instruct NapiDocs to look for `~/NapiDocs/plugins/my_custom_plugin.js`\nin the documentation directory.\n\nPlugins must export a single function:\n\n    /**\n     * Return HTML for the given asset object\n     * @param  {Object} asset_obj  The current asset being rendered (Markdown or directory)\n     * @param  {Object} parent_obj The parent asset of asset_obj, may be null/empty\n     * @param  {Object} all_data   The entire accumulated internal documentation representation\n     * @return {String}            HTML content\n     */\n    module.exports = function(asset_obj, parent_obj, all_data)\n    {\n      // Return HTML string\n    }\n\nThe internal documentation representation is visible by providing the `-d/--dump` command line\noption to the `node napidocs.js build` command.\n",
+    "parsed": "<div class='hero-unit'>\n\n<h1>NapiDocs</h1>\n\nREST Documentation Generator\n<br />\nWould you use a REST-style service without human-friendly documentation?\n<p />\n<img src='/cop-out-nope.gif'>\n</div>\n\n<h2>What is it?</h2>\n\n<p>NapiDocs is a set of <a href=\"http://nodejs.org/\">Node.js</a> command line scripts\nthat transform a directory of Markdown files and supporting resources\ninto a static HTML site pages documenting a REST-style service.</p>\n\n<h2>What&#39;s Included?</h2>\n\n<ul>\n<li><a href=\"http://twitter.github.com/bootstrap\">Twitter Bootstrap</a></li>\n<li><a href=\"http://bootswatch.com/\">Alternative Bootswatch Themes</a></li>\n<li><a href=\"http://softwaremaniacs.org/soft/highlight/en/\">Highlight.js</a></li>\n</ul>\n\n<h2>Documentation Workflow</h2>\n\n<ol>\n<li>Initialize an empty NapiDocs directory: <code>node napidocs.js init -t ~/NapiDocs&quot;</code>\n\n<ul>\n<li>This will create the following directory structure:\n\n<ul>\n<li><code>/_static</code>: Static resources (CSS, JS) that will be copied to the target output</li>\n<li><code>/build</code>: The built output that should be statically hosted.</li>\n<li><code>/docs</code>: The tree of Markdown files that comprise your service&#39;s documentation.</li>\n<li><code>/plugins</code>: Plugins used to transform the internal documentation tree to HTML output.  Plugins are referenced in the <code>/template/api.html</code> file.</li>\n<li><code>/template</code>: Includes the <code>api.html</code> file that is used to generate each documentation page.</li>\n</ul></li>\n</ul></li>\n<li>Preview the documentation: <code>node napidocs.js preview -s ~/NapiDocs</code>\n\n<ul>\n<li>This will build the documentation and start a local <a href=\"https://github.com/cloudhead/node-static\">static file-server</a> to serve up the pages on port 9696.  The port can be overriden using the <code>-p/--port</code> command line argument</li>\n</ul></li>\n<li>Update the the documentation inputs:\n\n<ul>\n<li>Update <code>/template/api.html</code>:\n\n<ul>\n<li>Change the <em>head/meta</em> elements for your service</li>\n<li>Change the template markup</li>\n<li>Optionally change the CSS style</li>\n<li>Optionally change the <a href=\"http://softwaremaniacs.org/media/soft/highlight/test.html\">highlights.js style</a> reference</li>\n</ul></li>\n<li>All immediate <code>/docs</code> child directories are transformed into Group headers in the sidebar.  Delete any immediate directories that don&#39;t apply to your service.</li>\n<li>Like the <a href=\"http://twitter.github.com/bootstrap/components.html#typography\">Hero Unit</a> at the top of this page, you can reference Twitter Bootstrap styles in your Markdown.</li>\n</ul></li>\n<li>Repeat steps 2 and 3 as needed</li>\n<li>Build the site: <code>node napidocs.js build --source ~/NapiDocs</code></li>\n<li>Host the documentation (<code>~/NapiDocs/build</code>) on a static server.\n\n<ul>\n<li>For example, a version of this documentation is hosted on <a href=\"http://napidocs.s3-website-us-west-2.amazonaws.com/README.html\">S3</a></li>\n</ul></li>\n</ol>\n\n<h2>Custom Plugins</h2>\n\n<p>If you want to customize the output, you can write a custom plugin and reference it in <code>/template/api.html</code>.  For example:</p>\n\n<pre><code>&lt;ul class=&quot;nav nav-list&quot;&gt;\n  &lt;%= my_custom_plugin %&gt;\n&lt;/ul&gt;\n</code></pre>\n\n<p>will instruct NapiDocs to look for <code>~/NapiDocs/plugins/my_custom_plugin.js</code>\nin the documentation directory.</p>\n\n<p>Plugins must export a single function:</p>\n\n<pre><code>/**\n * Return HTML for the given asset object\n * @param  {Object} asset_obj  The current asset being rendered (Markdown or directory)\n * @param  {Object} parent_obj The parent asset of asset_obj, may be null/empty\n * @param  {Object} all_data   The entire accumulated internal documentation representation\n * @return {String}            HTML content\n */\nmodule.exports = function(asset_obj, parent_obj, all_data)\n{\n  // Return HTML string\n}\n</code></pre>\n\n<p>The internal documentation representation is visible by providing the <code>-d/--dump</code> command line\noption to the <code>node napidocs.js build</code> command.</p>\n"
+  }
+}
