@@ -1,5 +1,10 @@
 ## Changes
 
+### 0.0.3
+
+* Handle plugin _underscore_ references by copying underscore.js to the `{docs}/plugins/lib` directory.
+* Output list of supported commands if supplied command cannot be resolved.
+
 ### 0.0.2
 
 * Support *index.md* files for subdirectories.
