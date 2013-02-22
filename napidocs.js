@@ -27,10 +27,31 @@
 var util = require('util');
 var path = require('path');
 var package_js = require('./package.json');
+var fs = require('fs');
+var _ = require('underscore');
+var COMMAND_DIR = path.join(__dirname, 'lib', 'commands');
 
 /*****************************************************************************/
 // Privates
 /*****************************************************************************/
+var _command_list = function ()
+{
+  var command_names = fs.readdirSync(COMMAND_DIR);
+  var names = _.reduce(command_names,
+                       function (memo, name) {
+                        var command_path = path.join(COMMAND_DIR, name);
+                        var stats = fs.lstatSync(command_path);
+                        if (stats.isFile())
+                        {
+                          var command_name = name.split('.');
+                          memo.push(command_name[0]);
+                        }
+                        return memo;
+                       },
+                       []);
+  return names;
+};
+
 var on_command = function(command_name, additional_arguments)
 {
   try
@@ -41,7 +62,7 @@ var on_command = function(command_name, additional_arguments)
     console.log('-------------------------------------------------------------------------------');
     try
     {
-      var command_path = path.join(__dirname, 'lib', 'commands', command_name);
+      var command_path = path.join(COMMAND_DIR, command_name);
       command = require(command_path);
     }
     catch (err)
@@ -52,7 +73,10 @@ var on_command = function(command_name, additional_arguments)
       }
       else
       {
-        throw new Error("Unsupported command: " + command_name);
+        var msg = util.format("Unsupported command: %s.  Recognized commands: %s",
+                              command_name,
+                              _command_list().join(','));
+        throw new Error(msg);
       }
     }
     // Run it
