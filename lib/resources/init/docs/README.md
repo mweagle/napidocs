@@ -24,6 +24,14 @@ into a static HTML site pages documenting a REST-style service.
 
 ## Documentation Workflow
 
+Before you begin iterating on your documentation, you'll need to:
+
+  * `git clone https://github.com/mweagle/napidocs.git ~/napidocs`
+  * cd ~/napidocs
+  * `npm install`
+
+Then you can start to write your documentation:
+
 1. Initialize an empty NapiDocs directory: `node napidocs.js init -t ~/NapiDocs"`
   * This will create the following directory structure:
       * `/_static`: Static resources (CSS, JS) that will be copied to the target output
