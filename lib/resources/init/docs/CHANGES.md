@@ -1,5 +1,13 @@
 ## Changes
 
+### 0.0.4
+
+* BREAKING CHANGE: Updated plugin signature to `(url_prefix, asset_obj, parent_obj, all_data)` so that plugins can create links have access to the optional user-supplied URL prefix.
+* Add `-p/--prefix` command line argument to `build` command
+  * This option allows you to customize the URL prefix used for the generated pages
+  * Defaults to '/'
+  * If you provide this value, you will likely need to also customize the `/api/template` file in your documentation directory.
+
 ### 0.0.3
 
 * Handle plugin _underscore_ references by copying underscore.js to the `{docs}/plugins/lib` directory.
