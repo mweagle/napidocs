@@ -6,7 +6,7 @@
 * Add `-p/--prefix` command line argument to `build` command
   * This option allows you to customize the URL prefix used for the generated pages
   * Defaults to '/'
-  * If you provide this value, you will likely need to also customize the `/api/template` file in your documentation directory.
+  * If you provide this value, you will likely need to also customize the `/template/api.html` file in your documentation directory.  This template has references to the 'static' resources associated with your documentation.
 
 ### 0.0.3
 
