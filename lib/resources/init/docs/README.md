@@ -69,12 +69,13 @@ Plugins must export a single function:
 
     /**
      * Return HTML for the given asset object
+     * @param  {String} url_prefix  The URL prefix to use in HREFs. Will *always* end in a trailing forward slash.
      * @param  {Object} asset_obj  The current asset being rendered (Markdown or directory)
      * @param  {Object} parent_obj The parent asset of asset_obj, may be null/empty
      * @param  {Object} all_data   The entire accumulated internal documentation representation
      * @return {String}            HTML content
      */
-    module.exports = function(asset_obj, parent_obj, all_data)
+    module.exports = function(url_prefix, asset_obj, parent_obj, all_data)
     {
       // Return HTML string
     }
