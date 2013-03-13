@@ -22,5 +22,5 @@
   "keywords": ["HATEOS", "documentation", "api"],
   "main": "./lib",
   "name": "napidocs",
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
