@@ -1,5 +1,8 @@
 ## Changes
 
+### 0.0.5
+* Use `path.resolve` to avoid plugin load failures when using relative paths
+
 ### 0.0.4
 
 * BREAKING CHANGE: Updated plugin signature to `(url_prefix, asset_obj, parent_obj, all_data)` so that plugins can create links have access to the optional user-supplied URL prefix.
