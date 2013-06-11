@@ -4,15 +4,15 @@
     "url": "https://github.com/mweagle/napidocs"
   },
   "dependencies": {
-    "async": "0.1.22",
+    "async": "0.2.9",
     "underscore": "1.4.4",
     "underscore.string": "2.0.0",
     "optimist": "0.3.4",
-    "node-static" : "0.6.5",
+    "node-static" : "0.6.9",
     "robotskirt" : "2.7.1",
-    "rimraf" : "2.1.1",
-    "mkdirp" : "0.3.4",
-    "ncp" : "0.2.6",
+    "rimraf" : "2.1.4",
+    "mkdirp" : "0.3.5",
+    "ncp" : "0.4.2",
     "highlight" : "0.2.3"
   },
   "description": "Node.js project that creates a static REST API Documentation site",
@@ -22,5 +22,6 @@
   "keywords": ["HATEOS", "documentation", "api"],
   "main": "./lib",
   "name": "napidocs",
-  "version": "0.0.5"
+  "version": "0.0.6",
+  "engines" : { "node": ">= 0.10.0" }
 }

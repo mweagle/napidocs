@@ -1,5 +1,9 @@
 ## Changes
 
+### 0.0.6
+* Upgrade dependencies in package.json
+* Require Node 0.10.10 in package.json definition
+
 ### 0.0.5
 * Use `path.resolve` to avoid plugin load failures when using relative paths
 
