@@ -1,10 +1,11 @@
-<div class='hero-unit'>
+<div class='jumbotron'>
 
 <h1>NapiDocs</h1>
 
 REST Documentation Generator
 <br />
-Would you use a REST-style service without human-friendly documentation?
+Would you use a REST-style service <br />
+without human-friendly documentation?
 <p />
 <img src='/cop-out-nope.gif'>
 </div>
@@ -32,7 +33,7 @@ Before you begin iterating on your documentation, you'll need to:
 
 Then you can start to write your documentation:
 
-1. Initialize an empty NapiDocs directory: `node napidocs.js init -t ~/NapiDocs"`
+1. Initialize an empty NapiDocs directory: `node napidocs.js init -t ~/NapiDocs`
   * This will create the following directory structure:
       * `/_static`: Static resources (CSS, JS) that will be copied to the target output
       * `/build`: The built output that should be statically hosted.
@@ -48,7 +49,7 @@ Then you can start to write your documentation:
       * Optionally change the CSS style
       * Optionally change the [highlights.js style](http://softwaremaniacs.org/media/soft/highlight/test.html) reference
   * All immediate `/docs` child directories are transformed into Group headers in the sidebar.  Delete any immediate directories that don't apply to your service.
-  * Like the [Hero Unit](http://twitter.github.com/bootstrap/components.html#typography) at the top of this page, you can reference Twitter Bootstrap styles in your Markdown.
+  * Like the [Jumbotron](http://getbootstrap.com/components/#jumbotron) at the top of this page, you can reference Twitter Bootstrap styles in your Markdown.
 4. Repeat steps 2 and 3 as needed
 5. Build the site: `node napidocs.js build --source ~/NapiDocs`
 6. Host the documentation (`~/NapiDocs/build`) on a static server.
