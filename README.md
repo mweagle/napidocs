@@ -12,9 +12,9 @@ Generates a static website that provides documentation for a REST-style service:
 ## Twitter Bootstrap Theme
 ![NapiDocs](https://raw.github.com/mweagle/napidocs/master/napidocs_bootstrap.png "napidocs_bootstrap.png")
 
-## Simplex Theme
-![NapiDocs](https://raw.github.com/mweagle/napidocs/master/napidocs_simplex.png "napidocs_simplex.png")
+## [Cosmo Theme](http://bootswatch.com/cosmo/)
+![NapiDocs](https://raw.github.com/mweagle/napidocs/master/napidocs_cosmo.png "napidocs_cosmo.png")
 
-## Cyborg Theme
-![NapiDocs](https://raw.github.com/mweagle/napidocs/master/napidocs_cyborg.png "napidocs_cyborg.png")
+## [Spacelab Theme](http://bootswatch.com/spacelab/)
+![NapiDocs](https://raw.github.com/mweagle/napidocs/master/napidocs_spacelab.png "napidocs_spacelab.png")
 
