@@ -1,5 +1,12 @@
 ## Changes
 
+### 0.0.7 <span class="label label-danger">Breaking Change</span>
+* Upgrade to Twitter Bootstrap to 3.0.0
+  * CSS names were changed to maintain compatibility with the [Bootstrap Changes](http://getbootstrap.com/getting-started/#migration).
+  * Update included Bootswatch themes
+* Upgrade dependencies in package.json
+* Rewrite default navigation plugin to use [Panels](http://getbootstrap.com/components/#panels) and [Breadcrumbs](http://getbootstrap.com/components/#breadcrumbs)
+
 ### 0.0.6
 * Upgrade dependencies in package.json
 * Require Node 0.10.10 in package.json definition
@@ -7,9 +14,9 @@
 ### 0.0.5
 * Use `path.resolve` to avoid plugin load failures when using relative paths
 
-### 0.0.4
+### 0.0.4 <span class="label label-danger">Breaking Change</span>
 
-* BREAKING CHANGE: Updated plugin signature to `(url_prefix, asset_obj, parent_obj, all_data)` so that plugins can create links have access to the optional user-supplied URL prefix.
+* Updated plugin signature to `(url_prefix, asset_obj, parent_obj, all_data)` so that plugins can create links have access to the optional user-supplied URL prefix.
 * Add `-p/--prefix` command line argument to `build` command
   * This option allows you to customize the URL prefix used for the generated pages
   * Defaults to '/'
