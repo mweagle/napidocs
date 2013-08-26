@@ -3,7 +3,7 @@ NapiDocs
 
 TL;DR;
 
-The statically generated HTML documentation is hosted on [Amazon S3](http://napidocs.s3-website-us-west-2.amazonaws.com/README.html)
+The statically generated HTML documentation is hosted on [Amazon S3](http://napidocs-0.0.7.s3-website-us-west-2.amazonaws.com/README.html)
 
 # Overview
 
